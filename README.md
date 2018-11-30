@@ -1,4 +1,15 @@
+# Neighborhood Map
+
+Neighborhood Map is a project that was created for the final project of the GrowWithGoogle/Udacity Frontend Nanodegree Program.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Resources
+
+Due to the crunch for time in trying to complete the project before the scholarship deadline and novice understanding of React, I followed [Forrest Walker's Videos](https://www.youtube.com/watch?v=ktc8Gp9jD1k&list=PL4rQq4MQP1crXuPtruu_eijgOUUXhcUCP) as well as referenced: [Google Maps API Documentation](https://developers.google.com/maps/documentation/javascript/tutorial) and [Foursquare API Documentation](https://developer.foursquare.com/docs/api).
+
+## Roadmap
+
+I plan to return to the project later to add additional styling and include more information in the InfoWindow of the venues.
 
 ## Available Scripts
 

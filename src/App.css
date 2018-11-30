@@ -1,5 +1,29 @@
-.App {
+.MapApp {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+    .sidebar{
+      width: 25%;
+      }
+}
+
+input#search{
+  width:75%;
+}
+
+li.listItem{
+  list-style: none;
+  text-align: left;
+  padding: 6px;
+  margin-top: 2px;
+  box-shadow: 1px 1px 1px grey;
+  background-color: orange;
+  cursor: pointer;
+}
+
+ol{
+  padding: 8px;
 }
 
 .App-logo {
