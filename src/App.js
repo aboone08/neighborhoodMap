@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
-//import landmarks from './data/landmarks.json';
 import Display from './components/Display';
 import Foursquare from './API/';
 import Sidebar from './components/Sidebar';
@@ -14,22 +12,21 @@ class MapApp extends Component {
       marker.isOpen=false;
       return marker;
     });
-    this.setState({markers:Object.assign(this.state.markers, markers)});
+    this.setState({markers: Object.assign(this.state.markers, markers)});
   };
   handleMarkerClick=marker=>{
     this.closeAllMarkers();
     marker.isOpen=true;
-    this.setState({markers:Object.assign(this.state.markers, marker)});
+    this.setState({markers: Object.assign(this.state.markers, marker)});
     const venue=this.state.venues.find(venue=>venue.id===marker.id);
 
     Foursquare.getVenueDetails(marker.id).then(res=>{
       const newVenue=Object.assign(venue, res.response.venue);
       this.setState({venues: Object.assign(this.state.venues, newVenue)});
-      console.log(newVenue);
     });
   };
   handleListItemClick=venue=>{
-    console.log(venue)
+    console.log(venue);
   }
   componentDidMount(){
     Foursquare.search({
